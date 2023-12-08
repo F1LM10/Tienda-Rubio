@@ -285,7 +285,7 @@ li:nth-child(5).active~.indicator { --x: 280px; }
     position: absolute;
     inset: 5px;
     border-radius: 16px;
-    background-color: Black;
+    background-color: #000000;
     z-index: 2;
 
 }
