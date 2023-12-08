@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Rubio</title>
+    <link rel="stylesheet" href="Servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lato&family=Lora:ital,wght@1,500&family=Montserrat:wght@400;700&family=Oswald&family=Roboto&family=Rubik:wght@900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="background-container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color:#4fabe9"></stop>
+                    <stop offset="50%" style="stop-color:rgba(43, 164, 235, 0.6)"></stop>
+                    <stop offset="100%" style="stop-color:#6eb8e9"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+            </defs>
+            <g>
+                <use xlink:href='#wave' opacity=".3">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="10s"
+                        calcMode="spline"
+                        values="270 230; -334 180; 270 230"
+                        keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".6">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="8s"
+                        calcMode="spline"
+                        values="-270 230;243 220;-270 230"
+                        keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacty=".9">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="6s"
+                        calcMode="spline"
+                        values="0 230;-140 200;0 230"
+                        keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+            </g>
+        </svg>
+    </div>
+
+     
+<div class="navigation">
+    <ul>
+        <li >
+            <a href="index.html">
+                <span class="icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text">Inicio</span>
+            </a>
+        </li>
+
+        <li >
+            <a href="Productos.html">
+                <span class="icon">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </span>
+                <span class="text">Productos</span>
+            </a>
+        </li>
+      
+        <li class="active">
+            <a href="Servicios.html">
+                <span class="icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </span>
+                <span class="text">Servicios</span>
+            </a>
+        </li>
+        <li>
+            <a href="Ofertas.html">
+                <span class="icon">
+                    <i class="fa-solid fa-tag"></i>
+                </span>
+                <span class="text">Ofertas</span>
+            </a>
+        </li>
+        <li>
+            <a href="Contactanos.html">
+                <span class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <span class="text">Contactanos</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div>
+
+    <div class="container">
+   
+        <img src="img/logo tienda.png" alt=" logo tienda">
+        <div class="text">
+            <h1>Servicios</h1>  
+            <p></p>
+        </div>
+    </div>
+       
+    <div class="title" id="title">
+        <h1>Corresponsal Financiero</h1>
+    </div>
+
+
+    <div class="Agricola" id="agricola" onclick="expandirTarjeta(this)" >
+
+        <img src="img/Banco agricola.jpg" alt="banco agricola">
+           
+        
+           <p><i class="fas fa-star" style="color: gold;"></i> Retira efectivo con Tarjeta de Crédito, Tarjeta de Débito y retiro de efectivo sin tarjeta.</p>
+           <p><i class="fas fa-star" style="color: gold;"></i> Realiza tus pagos de Tarjeta de Crédito, préstamos servicios y UES (con carnet de estudiante), en efectivo, Tarjeta de Débito o Crédito.</p>
+           <p><i class="fas fa-star" style="color: gold;"></i> Abona efectivo a Cuenta de Ahorro y Cuenta Corriente y haz Transferencias entre cuentas (a terceros y cuentas propias) de Ahorro y Corriente.</p>
+           <p> <i class="fas fa-star" style="color: gold;"></i> Haz tus cobros de remesas familiares, tanto en efectivo como abonando a tu cuenta.</p>
+           <p><i class="fas fa-star" style="color: gold;"></i> Realiza cobros de boletas en cualquiera de los Corresponsales disponibles.</p>
+       
+    
+    </div>
+
+
+    <div class="Promerica" id="promerica" onclick="expandirTarjeta(this)">
+        <img src="img/banco promerica.png" alt="banco promerica">
+            
+        
+        <p><i class="fas fa-star" style="color: gold;"></i> Pagos de tarjetas de crédito.</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Pagos de préstamos.</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Retiros con tarjeta de débito.</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Retiros con tarjeta de crédito.</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Depósitos a cuentas con tarjeta de débito.</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Pago de remesas familiares (MONEY-GRAM, RIA, REMESAS CUSCA, SIGUE, DOLEX).</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Pago de servicios (CAESS, EEO, CLESSA, DEUSEM, Del Sur, ANDA, Tigo, Telefónica, Claro, Digicel, FSV, UTEC, UFG, UCA, UEES, AVON, Grupo Q, Recargas Claro y Telefónica).</p>
+        <p><i class="fas fa-star" style="color: gold;"></i> Retiro de Efectivo con Token.</p>
+           
+       
+
+    </div>
+
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.container');
+        container.classList.add('show');
+    });
+
+
+    // animacion de extencion  
+    // Variable para mantener un seguimiento de la tarjeta actualmente expandida
+    let tarjetaExpandida = null;
+
+// animacion de extensión  
+function expandirTarjeta(tarjeta) {
+    // Verifica si hay una tarjeta ya expandida
+    if (tarjetaExpandida !== null && tarjetaExpandida !== tarjeta) {
+        // Contraer la tarjeta previamente expandida
+        tarjetaExpandida.classList.remove("expandida");
+    }
+    
+    // Expande o contrae la tarjeta actual
+    tarjeta.classList.toggle("expandida");
+    
+    // Actualiza la tarjeta actualmente expandida
+    tarjetaExpandida = tarjeta;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tarjetasProductos = document.querySelectorAll(".Agricola, .Promerica");
+
+    const opciones = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("aparece");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, opciones);
+
+    tarjetasProductos.forEach((tarjeta) => {
+        observer.observe(tarjeta);
+    });
+});
+
+
+// animacion de aparicion del titulo de corresponsal financiero
+
+document.addEventListener("DOMContentLoaded", function () {
+            const title = document.getElementById("title");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        title.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(title);
+        });
+
+        // barra de navegacion
+
+        const $list = document.querySelectorAll('li');
+
+function activeLink() {
+    $list.forEach(($li) => {
+        $li.classList.remove('active');
+    });
+
+    this.classList.add('active');
+}
+
+$list.forEach(($li) => {
+    $li.addEventListener('click', activeLink);
+});
+</script>
+
+<footer>
+    <div class="logo-container">
+        <img src="img/logo tienda.png" alt="Logo Tienda Rubio">
+    </div>
+    <p>&copy; 2023 Tienda Rubio. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tienda Rubio</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lato&family=Lora:ital,wght@1,500&family=Montserrat:wght@400;700&family=Oswald&family=Roboto&family=Rubik:wght@900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  
+  <div id="background-container">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+        <defs>
+            <linearGradient id="bg">
+                <stop offset="0%" style="stop-color:#4fabe9"></stop>
+                <stop offset="50%" style="stop-color:rgba(43, 164, 235, 0.6)"></stop>
+                <stop offset="100%" style="stop-color:#6eb8e9"></stop>
+            </linearGradient>
+            <path id="wave" fill="url(#bg)"
+                d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+        </defs>
+        <g>
+            <use xlink:href='#wave' opacity=".3">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="10s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".6">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacty=".9">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+        </g>
+    </svg>
+</div>
+  
+
+    <div class="navigation">
+        <ul>
+            <li class="active">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Productos.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </span>
+                    <span class="text">Productos</span>
+                </a>
+            </li>
+          
+            <li>
+                <a href="Servicios.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <span class="text">Servicios</span>
+                </a>
+            </li>
+            <li>
+                <a href="Ofertas.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </span>
+                    <span class="text">Ofertas</span>
+                </a>
+            </li>
+            <li>
+                <a href="Contactanos.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span class="text">Contactanos</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    
+
+              
+
+    <div class="container">
+        <img src="img/logo tienda.png" alt=" logo tienda">
+        <div class="text">
+            <h1>Tienda Rubio</h1>
+            <p>Mas que una tienda</p>
+        </div>
+    </div>
+    
+    <div class="quienes-somos">
+       
+            <div class="zoom">
+                <img src="img/Nuestra gente.jpeg" alt="Imagen Quienes Somos">
+            </div>
+           
+        <div class="texto">
+            <h1>Quienes somos</h1>
+            <p>Somos una empresa comprometida con la satisfacción <br> de nuestros clientes.  Desde hace años,  hemos  estado <br> proporcionando productos de alta calidad y  servicios excepcionales.</p>
+        </div>
+    </div>
+    
+
+
+
+    <div class="Historia">
+        <h1>"Conoce nuestra historia"</h1>
+        <p>Tienda Rubio, nace el los años 90s de la mano de los fundadores don Filadelfo Reyes Rubio (QDDG) y la Sra. Rosa Celia Rochez Hernández en la ciudad de San Martin, surge como una idea de negocio de venta de productos de primera necesidad de mayoreo y detalle al publico en general, la propuesta de Tienda Rubio siempre ha sido diferenciarnos de la competencia por medio de la atención al cliente y la variedad de productos que ofrecemos al público, hoy en día con el auge de la tecnología hemos aplicado nuevos procedimientos en la empresa con el fin de llevar todos nuestros productos al publico en las mejores condiciones como fechas de vencimientos optimas y productos en buen estado, todo ello con el único objetivo de ser la mejor opción para nuestros clientes actuales y los que se van añadiendo al pasar del tiempo. </p>
+     </div>
+
+    
+     <div class="contain" style="display: flex; gap: 20px;">
+        <div class="Mision animated-item" style="background: linear-gradient(to bottom,#0f7dd6,rgb(66, 172, 238)); flex: 1; padding: 20px;">
+            <h1>Nuestra Misión</h1>
+            <p>Nuestra misión es proporcionar a nuestros clientes productos de alta calidad que satisfagan sus necesidades diarias. Estamos comprometidos con la excelencia en el servicio y la satisfacción del cliente.</p>
+           
+        </div>
+    
+        <div class="Vision animated-item" style="background: linear-gradient(to bottom,#0f7dd6,rgb(66, 172, 238)); flex: 1; padding: 20px;">
+            <h1>Visión</h1>
+            <p>Nuestra visión es convertirnos en líderes en la industria, ofreciendo constantemente nuevas opciones y soluciones a nuestros clientes para satisfacer sus necesidades presentes y futuras.</p>
+            
+        </div>
+    
+        <div class="Valores animated-item" style="background: linear-gradient(to bottom,#0f7dd6,rgb(66, 172, 238)); flex: 1; padding: 20px;">
+            <h1>Valores</h1>
+            <p>Nuestros valores fundamentales incluyen la integridad, la calidad, la innovación y el compromiso con la comunidad. Estos valores son el corazón de nuestra empresa.</p>
+         
+        </div>
+    </div>
+
+    <div class="Title-products" id="titleProducts"><h1>"Nuestros Productos"</h1></div> 
+
+<div class="productos" id="productos">     
+    <div class="move">
+      <div class="producto">
+        <img src="img/Abarrotes-Aceites-y-Margarinas-Aceites-de-Oliva_7413100084376_1 - copia.webp" alt="">
+        
+      </div>
+      <div class="producto">     
+        <img src="img/jugo del valle naranja 2500 ml.webp" alt="">
+
+      </div>
+        
+      <div class="producto">
+
+        <img src="img/atraction.jpg" alt="">
+      </div>
+
+      <div class="producto">
+        <img src="img/big cola 6 pack 2600 ml.webp" alt="">
+      </div>
+
+      <div class="producto">
+        <img src="img/Pepsi 3.3 L.webp" alt="">
+      </div>
+
+      <div class="producto">
+
+        <img src="img/Cereal-Corn-Flakes-Kellogg-Caja-500G-1-17536.webp" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/lapiz deliniador maybeline.webp" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/Desodorante-Spray-Nivea-Aclarado-Natural-Dama-150Ml-1-3201.webp" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/huggies pa¤ales.png" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/Papel-HigieCC81nico-Scott-Cuidado-Completo_-12-uds-Front.jpg" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/soft_cake_sabor_original_.jpg" alt="">
+      </div>
+      <div class="producto">
+        <img src="img/Salsa Naturas Queso.jpg">
+      </div>
+      <div class="producto">
+        <img src="img/crema ponds rejuvenees 100g.webp">
+      </div>
+      <div class="producto">
+        <img src="img/Nivea crema 50 ml.webp">
+      </div>
+      <div class="producto">
+        <img src="img/agua pura aqua 750ml.webp">
+      </div>
+      <div class="producto">
+        <img src="img/agua micelar teatrical humectante aguacate.webp">
+      </div>
+      
+    </div>
+  </div>
+  
+   <div id="tmarcas" class="Tmarcas">
+    <h1>"Nuestras Marcas"</h1>
+   </div>
+    
+  
+<div id="Marcas" class="Marcas">
+
+<div>
+    <img src="img/coca cola logo.png" alt="">
+    <img src="img/pepsi logo.png" alt="">  
+    <img src="img/Orisol logo.png" alt="">
+    <img src="img/kellogs logo.webp" alt="">
+    <img src="img/rexona logo.png" alt="">
+    <img src="img/pasta fama logo.png" alt="">
+  </div>
+
+</div>
+
+  <div id="marcas" class="marcas">
+
+    <img src="img/Mazola logo.png" alt="">
+    <img src="img/coscafe logo.png" alt="">
+    <img src="img/nivea logo.png" alt="">
+    <img src="img/huggies logo.png" alt="">
+    <img src="img/ego logo.jpeg" alt="">
+    <img src="img/big cola logo.png" alt="">
+    
+  </div>
+
+
+
+<script src="jquery-3.7.1.min.js"></script>
+     
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+ 
+
+ 
+// animacion de la parte de arriba
+
+    // Agregar la clase show cuando el contenedor sea visible en la pantalla
+    document.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.container');
+        container.classList.add('show');
+    });
+
+// animacion de quienes somos
+
+    function checkScroll() {
+            var texto = document.querySelector('.texto');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var elementPosition = texto.offsetTop;
+
+            if (scrollPosition > elementPosition) {
+                texto.classList.add('show');
+            }
+        }
+
+     // Agregar un evento de desplazamiento para llamar a la función checkScroll
+     document.addEventListener('scroll', checkScroll);
+
+// Llamar a la función checkScroll cuando se carga la página
+document.addEventListener('DOMContentLoaded', checkScroll);
+
+
+
+
+
+
+// animacion de nuestra historia
+/*-----------------------------------------*/
+$(document).ready(function () {
+        var historiaOffset = $(".Historia").offset().top;
+
+        $(window).scroll(function () {
+            var scrollPos = $(window).scrollTop() + $(window).height();
+
+            if (scrollPos > historiaOffset) {
+                $(".Historia").addClass("aparecer");
+            }
+        });
+    });
+  
+// animacion de mision vision y valores 
+
+document.addEventListener("DOMContentLoaded", function () {
+    var animatedItems = document.querySelectorAll(".animated-item");
+
+    function checkIfInView() {
+        animatedItems.forEach(function (item) {
+            var bounding = item.getBoundingClientRect();
+
+            if (bounding.top >= 0 && bounding.bottom <= window.innerHeight && !item.classList.contains("animate")) {
+                item.classList.add("animate");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkIfInView);
+    window.addEventListener("resize", checkIfInView);
+
+    // Llama a la función al cargar la página para manejar el caso cuando el usuario ya está en la parte deseada
+    checkIfInView();
+});
+
+// animacion de aparicion del titulo de nuestros productos
+document.addEventListener("DOMContentLoaded", function () {
+    const titleProducts = document.getElementById('titleProducts');
+
+    function handleScroll() {
+      const distanciaDesdeLaCima = titleProducts.getBoundingClientRect().top;
+      const distanciaDesdeLaParteVisible = window.innerHeight - 100;
+
+      if (distanciaDesdeLaCima < distanciaDesdeLaParteVisible) {
+        titleProducts.style.opacity = 1;
+        titleProducts.style.transform = 'translateY(0)';
+        titleProducts.classList.add('neonAnimation'); // Agrega la clase con la animación de color
+        window.removeEventListener('scroll', handleScroll); // Detener la escucha del evento después de la animación
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  });
+
+
+  //  animacion para que aparesca el carrusel 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const productos = document.getElementById('productos');
+
+    function handleScroll() {
+      const distanciaDesdeLaCima = productos.getBoundingClientRect().top;
+      const distanciaDesdeLaParteVisible = window.innerHeight - 100;
+
+      if (distanciaDesdeLaCima < distanciaDesdeLaParteVisible) {
+        productos.style.opacity = 1;
+        productos.style.transform = 'translateY(0)';
+        window.removeEventListener('scroll', handleScroll); // Detener la escucha del evento después de la animación
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  });
+
+
+  // carrusel de nuestras marcas
+
+  $(document).ready(function(){
+                $('.carrusel').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true, 
+                    autoplaySpeed: 2000,  
+                    arrows: false
+                });
+            });
+      
+
+      // aparicion del titulo de nuestras marcas 
+
+      document.addEventListener("DOMContentLoaded", function () {
+            const tmarcas = document.getElementById("tmarcas");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        tmarcas.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(tmarcas);
+        });
+
+
+        // aparicion de los logos de nuestras marcas
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const Marcas = document.getElementById("Marcas");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        Marcas.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(Marcas);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const marcas = document.getElementById("marcas");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        marcas.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(marcas);
+        });
+
+
+        // barra de navegacion
+
+        const $list = document.querySelectorAll('li');
+
+function activeLink() {
+    $list.forEach(($li) => {
+        $li.classList.remove('active');
+    });
+
+    this.classList.add('active');
+}
+
+$list.forEach(($li) => {
+    $li.addEventListener('click', activeLink);
+});
+</script>
+
+<footer>
+    <div class="logo-container">
+        <img src="img/logo tienda.png" alt="Logo Tienda Rubio">
+    </div>
+    <p>&copy; 2023 Tienda Rubio. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

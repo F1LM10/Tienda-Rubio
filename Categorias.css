@@ -1,0 +1,520 @@
+body {
+    margin: 0;
+   
+    
+}
+
+#background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #3F98D4;
+    background-image: linear-gradient(to bottom, #3F98D4, #19659b);
+    
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* barra de navegacion */
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+
+.icon, .text{
+    color: #222327;
+}
+
+.navigation{
+    
+    margin-top: 28px;
+    margin-left: 470px;
+    position: fixed;
+    width: 400px;
+    height: 70px;
+    background: #D7ECF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: 8px solid #6A7685;
+    z-index: 2;
+    box-shadow: 1px 1px 9px rgb(3, 224, 158);
+   
+
+}
+
+ul{
+    display: flex;
+    width: 350px;
+    padding: 0;
+}
+
+li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none; /* Agregado para quitar la línea subrayada */
+}
+
+a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+li.active a .icon{
+    transform: translateY(-35px);
+}
+
+a.text{
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+
+li.active a .text {
+    transform: translateY(10px);
+}
+
+.indicator{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #1583D9;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border:  6px solid #6A7685;
+    transition: 0.5s;
+}
+
+.indicator::before,
+.indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+}
+
+.indicator::before{
+    left: -22px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -8px 0 0 #6A7685;
+}
+
+.indicator::after{
+    right: -22px;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -8px 0 0 #6A7685;
+}
+
+li.active~.indicator{
+    --x:0;
+    transform: translateX(var(--x));
+}
+
+li:nth-child(1).active~.indicator { --x: 0; }
+li:nth-child(2).active~.indicator { --x: 70px; }
+li:nth-child(3).active~.indicator { --x: 140px; }
+li:nth-child(4).active~.indicator { --x: 210px; }
+li:nth-child(5).active~.indicator { --x: 280px; }
+/* contenedor principal */
+
+
+.container {
+    position: relative;
+    background-color:none;
+    height: 600px;
+    background-image: url('img/');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: none;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Ajusta el valor alpha para controlar la opacidad */
+    
+}
+
+.container img {
+    position: relative;
+    z-index: 2; /* Asegura que la imagen esté por encima de la superposición */
+    height: 100px;
+    padding: 20px;
+    border-radius: 40px;
+    animation: girar 2s ; /* Aplica la animación llamada "girar" durante 2 segundos de manera infinita */
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg); /* La transformación en el inicio de la animación (0 grados de rotación) */
+    }
+    100% {
+        transform: rotate(360deg); /* La transformación al final de la animación (360 grados de rotación, una vuelta completa) */
+    }
+}
+
+
+.text {
+    opacity: 0; /* Inicialmente, el texto estará invisible */
+    transform: translateY(100px); /* Desplazar el texto hacia abajo para que aparezca hacia arriba */
+    transition: opacity 1.5s ease, transform 1.5s ease; /* Agregar transiciones para suavizar la animación */
+    position: absolute;
+    bottom: 170px; /* Ajustar la posición vertical del texto según sea necesario */
+    left: 34%;
+    transform: translateY(-100%);
+    color: #fff;
+    text-align: center;
+  
+}
+
+.text h1{
+    font-family: 'Lato';
+    font-size: 100px;
+    text-shadow: 0px 1px 1px rgb(30, 32, 32);
+    color: #D7ECF9;
+}
+
+.text p{
+    font-family: sans-serif; 
+    font-size: 23px;
+    text-shadow: 0px 1px 1 px rgb(240, 233, 233);
+}
+
+/* Añadir la clase show para activar la animación cuando el contenedor sea visible en la pantalla */
+.container.show .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* diseño de los productos */
+
+.productos {
+  
+    background-color: none;
+    border: 4px solid aliceblue;
+    width: 390px;
+    height: 350px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 480px;   
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.7s, margin-left 0.7s;
+    display: flex;
+    flex-direction: row; /* Alineación horizontal */
+    
+}
+
+.productos.expandida {
+    width: 700px; /* Ancho expandido */
+    height: 500px;
+    margin-left: 320px;
+    margin-bottom: 100px;
+}
+  
+.productos img {
+    width: 330px;
+    height: 300px; /* Reduje la altura de la imagen */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 45px;
+    transition: transform 0.5s;
+    
+}
+
+.productos.expandida img {
+    transform: translateY(80px); /* Muevo la imagen hacia abajo al expandir la tarjeta */
+}
+
+.contenido {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    flex: 1; /* Expande el contenido para llenar el espacio restante */
+    margin-left: 30px;
+}
+
+.productos h1 {
+    font-family: 'Lato';
+    font-size: 30px;
+    margin-bottom: 10px; /* Agregué un margen inferior para separar del párrafo */
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.productos p {
+    font-family: 'Lato';
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.info-adicional {
+    display: none;
+}
+
+.productos.expandida .info-adicional {
+    display: block;
+}
+
+/* estilo de las categorias */
+
+.TProductos{
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(90deg, rgb(0, 132, 255), rgb(80, 217, 241));
+    background-size: 400% 400%;
+    border-radius: 20px;
+    animation: 3s gradient infinite;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-top: 300px;
+    text-align: center;
+  
+
+}
+
+
+.TProductos h1{
+    padding-top: 50px;
+    font-family: 'LAto';
+    font-size: 40px;
+}
+@keyframes gradient{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+#categorias {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2s ease, transform 1s ease;
+}
+
+#categorias.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ /* Estilo para las tarjetas de productos */
+.Producto {
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 400px;
+}
+
+.Producto:hover {
+    transform: scale(1.05);
+}
+
+
+
+.Producto img {
+    max-width: 100%;
+    max-height: 150px; 
+    width: auto;
+    height: 400px;
+}
+
+
+
+/* Estilos para el texto de las tarjetas */
+.product-card {
+
+    height: 450px;
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 450px; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto;
+    margin-left: 140px;
+    margin-bottom: 60px;
+    
+}
+
+
+
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.image-carousel {
+    position: relative;
+}
+
+.image-carousel img {
+    width: 70%;
+    display: none;
+    border-bottom: 1px solid #ddd;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.image-carousel img:first-child {
+    display: block;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 35px;
+    margin-top: 30px;
+    background-size: 400% 400%;
+    background: linear-gradient(90deg, rgb(0, 132, 255), rgb(36, 245, 217));
+    border-radius: 40px;
+    width: 300px;
+    
+    
+}
+
+
+h2:hover{
+    transition: 1.2s;
+    color: #da0606;
+    text-shadow: 4px 4px 9px rgb(245, 243, 243);
+    
+}
+
+
+/* animacion de aparicion de las categorias de productos */
+
+
+#alimentos {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2.5s ease, transform 1s ease;
+}
+
+#alimentos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#bebidas {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2.5s ease, transform 2s ease;
+}
+
+#bebidas.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#higiene{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2.5s ease, transform 1s ease;
+}
+
+#higiene.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cosmeticos {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2.5s ease, transform 2s ease;
+}
+
+#cosmeticos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#cigarrillos {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2.5s ease, transform 1s ease;
+}
+
+#cigarrillos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* pie de pagina */
+
+footer {
+    background-color: #D7ECF9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo-container img {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    margin: 0;
+}

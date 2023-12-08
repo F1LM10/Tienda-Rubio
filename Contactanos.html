@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Rubio</title>
+    <link rel="stylesheet" href="Contactanos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lato&family=Lora:ital,wght@1,500&family=Montserrat:wght@400;700&family=Oswald&family=Roboto&family=Rubik:wght@900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="background-container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+            <defs>
+                <linearGradient id="bg">
+                    <stop offset="0%" style="stop-color:#4fabe9"></stop>
+                    <stop offset="50%" style="stop-color:rgba(43, 164, 235, 0.6)"></stop>
+                    <stop offset="100%" style="stop-color:#6eb8e9"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+            </defs>
+            <g>
+                <use xlink:href='#wave' opacity=".3">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="10s"
+                        calcMode="spline"
+                        values="270 230; -334 180; 270 230"
+                        keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacity=".6">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="8s"
+                        calcMode="spline"
+                        values="-270 230;243 220;-270 230"
+                        keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+                <use xlink:href='#wave' opacty=".9">
+                    <animateTransform
+                        attributeName="transform"
+                        attributeType="XML"
+                        type="translate"
+                        dur="6s"
+                        calcMode="spline"
+                        values="0 230;-140 200;0 230"
+                        keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                        repeatCount="indefinite" />
+                </use>
+            </g>
+        </svg>
+    </div>
+      
+      
+    <div class="navigation">
+        <ul>
+            <li >
+                <a href="index.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+    
+            <li>
+                <a href="Productos.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                    </span>
+                    <span class="text">Productos</span>
+                </a>
+            </li>
+          
+            <li>
+                <a href="Servicios.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <span class="text">Servicios</span>
+                </a>
+            </li>
+            <li>
+                <a href="Ofertas.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-tag"></i>
+                    </span>
+                    <span class="text">Ofertas</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="Contactanos.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span class="text">Contactanos</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    
+    
+    
+    
+        <div class="container">
+       
+            <img src="img/logo tienda.png" alt=" logo tienda">
+            <div class="text">
+                <h1>Contactanos</h1>  
+                <p>¡Estamos aquí para ayudarte! Ponte en contacto con nosotros para cualquier pregunta o comentario.</p>
+            </div>
+        </div>
+
+       
+        <div class="email" id="email">
+          
+            <h1><i class="fas fa-envelope"></i>
+            tiendarubio@gmail.com</h1>
+
+        </div>
+
+        <div class="telefono" id="telefono">
+
+            <h1><i class="fa-solid fa-phone"></i>6301-2289</h1>
+
+        </div>
+
+        <div class="direccion" id="direccion">
+     
+            <h1><i class="fas fa-map-marker"></i>Sucursal 1 Centro Comercial San Martin: Locales 70-80, San Martin</h1>
+
+        </div>
+
+        <script>
+
+// animacion del encabezado
+
+document.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.container');
+        container.classList.add('show');
+    });
+
+            // barra de navegacion
+
+        const $list = document.querySelectorAll('li');
+
+function activeLink() {
+    $list.forEach(($li) => {
+        $li.classList.remove('active');
+    });
+
+    this.classList.add('active');
+}
+
+$list.forEach(($li) => {
+    $li.addEventListener('click', activeLink);
+});
+
+
+// animacion de aparicion
+
+document.addEventListener("DOMContentLoaded", function () {
+            const email = document.getElementById("email");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        email.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(email);
+        });
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    document.addEventListener("DOMContentLoaded", function () {
+            const telefono = document.getElementById("telefono");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        telefono.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(telefono);
+        });
+
+        //////////////////////////////////////////////////////////////////////////////
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const direccion = document.getElementById("direccion");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        direccion.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(direccion);
+        });
+        </script>
+
+<footer>    
+    <div class="logo-container">
+        <img src="img/logo tienda.png" alt="Logo Tienda Rubio">
+    </div>
+    <p>&copy; 2023 Tienda Rubio. Todos los derechos reservados.</p> 
+  </footer>
+
+</body>
+</html>

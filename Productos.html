@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Rubio</title>
+    <link rel="stylesheet" href="Productos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Lato&family=Lora:ital,wght@1,500&family=Montserrat:wght@400;700&family=Oswald&family=Roboto&family=Rubik:wght@900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div id="background-container">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+        <defs>
+            <linearGradient id="bg">
+                <stop offset="0%" style="stop-color:#4fabe9"></stop>
+                <stop offset="50%" style="stop-color:rgba(43, 164, 235, 0.6)"></stop>
+                <stop offset="100%" style="stop-color:#6eb8e9"></stop>
+            </linearGradient>
+            <path id="wave" fill="url(#bg)"
+                d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+        </defs>
+        <g>
+            <use xlink:href='#wave' opacity=".3">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="10s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".6">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacty=".9">
+                <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite" />
+            </use>
+        </g>
+    </svg>
+</div>
+  
+  
+<div class="navigation">
+    <ul>
+        <li >
+            <a href="index.html">
+                <span class="icon">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <span class="text">Inicio</span>
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="Productos.html">
+                <span class="icon">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                </span>
+                <span class="text">Productos</span>
+            </a>
+        </li>
+      
+        <li>
+            <a href="Servicios.html">
+                <span class="icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </span>
+                <span class="text">Servicios</span>
+            </a>
+        </li>
+        <li>
+            <a href="Ofertas.html">
+                <span class="icon">
+                    <i class="fa-solid fa-tag"></i>
+                </span>
+                <span class="text">Ofertas</span>
+            </a>
+        </li>
+        <li>
+            <a href="Contactanos.html">
+                <span class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <span class="text">Contactanos</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div>
+
+
+
+
+    <div class="container">
+   
+        <img src="img/logo tienda.png" alt=" logo tienda">
+        <div class="text">
+            <h1>Productos</h1>  
+            <p>"Explora el mundo de calidad y variedad. Nuestro compromiso es ofrecerte productos <br> excepcionales que hacen la diferencia en tu vida diaria. Descubre, elige, disfruta."</p>
+        </div>
+    </div>
+
+
+    <div id="seccionDestacada" class="Titulo-pdestacados">
+
+     <span>
+
+        <h1>Productos destacados</h1>
+
+    </span>
+
+    </div>
+
+    <div class="P-Destacados" id="productosDestacados">
+
+        <div class="D-Product">
+          <img src="img/Abarrotes-Aceites-y-Margarinas-Aceites-de-Oliva_7413100084376_1.webp" alt="">
+          <h3>Aceite de oliva Orisol</h3>
+          <p>Precio: $2.70</p>
+        </div>
+
+        <div class="D-Product">
+            <img src="img/Salsa Naturas Queso.jpg" alt="">
+            <h3>Salsa Naturas de Queso</h3>
+            <p>Precio: $0.59</p>
+          </div>
+
+          <div class="D-Product">
+            <img src="img/petit lata.jpg" alt="">
+            <h3>Petit lata fardo 24 unidades</h3>
+            <p>Precio: $11.29</p>
+          </div> 
+        
+      </div>
+
+
+      <div id="categorias" class="TProductos">
+          <h1>Categorias</h1>
+      </div>
+
+
+      <div id="alimentos" class="product-card">
+       <a href="Alimentos.html"><h2>Alimentos</h2></a>
+        <div class="alimentos image-carousel">
+          <img src="img/Abarrotes-Aceites-y-Margarinas-Aceites-de-Oliva_7413100084376_1 - copia.webp" alt="Producto 1">
+          <img src="img/Cereal-Corn-Flakes-Kellogg-Caja-500G-1-17536.webp" alt="Producto 2">
+          <img src="img/Salsa Naturas Queso.jpg" alt="Producto 3">
+        </div>
+      </div>
+
+      
+
+
+      <div id="bebidas" class="product-card">
+        <a href="Bebidas.html"><h2>Bebidas</h2></a>
+         <div class="bebidas image-carousel">
+           <img src="img/petit lata.jpg" alt="Producto 1">
+           <img src="img/Pepsi 3.3 L.webp" alt="Producto 2">
+           <img src="img/coca cola lata unidad.webp" alt="Producto 3">
+         </div>
+       </div>
+
+    
+      <div id="higiene" class="product-card">
+        <a href="Higiene y Aseo.html"><h2>Higiene y aseo</h2></a>
+         <div class="higiene image-carousel">
+           <img src="img/papel doble oja.png" alt="Producto 1">
+           <img src="img/Papel-HigieCC81nico-Scott-Cuidado-Completo_-12-uds-Front.jpg" alt="Producto 2">
+           <img src="img/huggies pa¤ales.png" alt="Producto 3">
+         </div>
+       </div>
+
+       
+      <div id="cosmeticos" class="product-card">
+        <a href="Cosmeticos.html"><h2>Cosmeticos</h2></a>
+         <div class="cosmeticos image-carousel">
+           <img src="img/mascara vogue.webp" alt="Producto 1">
+           <img src="img/lapiz deliniador maybeline.webp" alt="Producto 2">
+           <img src="img/Desodorante-Spray-Nivea-Aclarado-Natural-Dama-150Ml-1-3201.webp" alt="Producto 3">
+         </div>
+       </div>
+
+      
+
+       <div id="cigarrillos" class="product-card">
+        <a href="Cigarrillos.html"><h2>Cigarrillos</h2></a>
+         <div class="cigarrillos image-carousel">
+           <img src="img/pall mall mykonos 20 clic.webp" alt="Producto 1">
+           <img src="img/cigarros malboro crafted red caja 20 unidades.webp" alt="Producto 2">
+           <img src="img/cigarro L&M samba splash 10 unidades.jpeg" alt="Producto 3">
+         </div>
+       </div>
+        
+    
+        
+       <script>
+        // animacion del encabezado
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var container = document.querySelector('.container');
+        container.classList.add('show');
+    });
+
+// animacion de aparicion del titulo de productos destacados 
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Selecciona la sección que contiene el elemento a destacar
+  const seccionDestacada = document.getElementById("seccionDestacada");
+
+  // Configura las opciones para el Intersection Observer
+  const opciones = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5, // Cambia esto según tus necesidades
+  };
+
+  // Crea una nueva instancia del Intersection Observer con una función de callback
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Si la sección es visible, agrega la clase que activa la animación
+        seccionDestacada.classList.add("visible");
+        // Detén la observación después de activar la animación
+        observer.disconnect();
+      }
+    });
+  }, opciones);
+
+  // Comienza a observar la sección
+  observer.observe(seccionDestacada);
+});
+
+// animacion de aparicion de productos destacados
+
+document.addEventListener("DOMContentLoaded", function () {
+  const productosDestacados = document.getElementById("productosDestacados");
+  const cards = document.querySelectorAll(".D-Product");
+
+  const opciones = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, opciones);
+
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+});
+
+// animacion de la tarjeta de productos con carrusel
+
+$(document).ready(function () {
+    // Configuración del carrusel para cada categoría
+    $('.image-carousel').each(function () {
+        var currentIndex = 0;
+        var items = $(this).find('img');
+        var totalItems = items.length;
+
+        // Mostrar la primera imagen
+        items.eq(currentIndex).fadeIn();
+
+        // Función para mostrar la siguiente imagen con animación
+        function showNext() {
+            items.eq(currentIndex).fadeOut(800, function () {
+                currentIndex = (currentIndex + 1) % totalItems;
+                items.eq(currentIndex).fadeIn(800);
+            });
+        }
+
+        // Configuración del intervalo para el carrusel automático (cada 3 segundos)
+        var interval = setInterval(showNext, 3000);
+
+        // Detener el carrusel al pasar el ratón sobre la tarjeta
+        $(this).hover(
+            function () {
+                clearInterval(interval);
+            },
+            function () {
+                interval = setInterval(showNext, 3000);
+            }
+        );
+    });
+});
+
+
+// animacion del titulo de las categorias
+
+document.addEventListener("DOMContentLoaded", function () {
+            const categorias = document.getElementById("categorias");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        categorias.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(categorias);
+        });
+
+// animacion de aparicion de las tarjetas
+
+
+document.addEventListener("DOMContentLoaded", function () {
+            const alimentos = document.getElementById("alimentos");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        alimentos.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(alimentos);
+        });
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+
+    document.addEventListener("DOMContentLoaded", function () {
+            const bebidas = document.getElementById("bebidas");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        bebidas.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(bebidas);
+        });
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+
+  document.addEventListener("DOMContentLoaded", function () {
+            const higiene = document.getElementById("higiene");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        higiene.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(higiene);
+        });
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+            const cosmeticos = document.getElementById("cosmeticos");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        cosmeticos.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(cosmeticos);
+        });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener("DOMContentLoaded", function () {
+            const cigarrillos = document.getElementById("cigarrillos");
+
+            const opciones = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        cigarrillos.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, opciones);
+
+            observer.observe(cigarrillos);
+        });
+
+        // barra de navegacion
+
+        const $list = document.querySelectorAll('li');
+
+function activeLink() {
+    $list.forEach(($li) => {
+        $li.classList.remove('active');
+    });
+
+    this.classList.add('active');
+}
+
+$list.forEach(($li) => {
+    $li.addEventListener('click', activeLink);
+});
+    </script>
+
+<footer>
+  <div class="logo-container">
+      <img src="img/logo tienda.png" alt="Logo Tienda Rubio">
+  </div>
+  <p>&copy; 2023 Tienda Rubio. Todos los derechos reservados.</p>
+</footer>
+
+</body> 
+
+
+</html>
